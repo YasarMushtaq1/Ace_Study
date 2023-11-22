@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/faqData.js"></script>
+    <link rel="icon" href="images/Fav1.jfif" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Study</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="#" class="logo">Ace<span>Study</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="login-box">home</a>
+        <a href="course.html" class="login-box">course</a>
+        <a href="teacher.html" class="login-box">teacher</a>
+        <a href="price.html" class="login-box">price</a>
+        <a href="review.html" class="login-box">review</a>
+        <a href="contact.html" class="login-box">contact</a>
+        <a href="Log in/index.html" class="login-box">Log in</a>
+    </nav>
+
+</header>
+
+<!-- home section  -->
+
+<section class="home">
+
+    <div class="content">
+        <h3 id="typing-text">Ace Study</h3>
+        <h3>a better way of learning</h3>
+        <p>In the dynamic and ever-evolving world of technology, the demand for skilled 
+            professionals in data science and software engineering is surging. To address this growing demand, 
+            Ace Study was conceived as a visionary educational platform, dedicated to delivering high-quality, 
+            practical, and accessible education to learners worldwide. The platform was created with the intent 
+            to empower individuals to not only navigate but excel in these critical fields.</p>
+        <a href="course.html" class="btn">get started</a>
+        <!---audio-->
+          <audio id="myAudio" autoplay>
+            <!---in oreder to make this sound work rewrite the path OR it might be only the problem of my computer-->
+              <source src="mp3/homeBG.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <button id="muteButton" class="btn" onclick="toggleMute()">
+              <i class="fas fa-volume-up"></i>
+          </button>
+      </div>
+
+    <div class="image">
+        <img src="images/1.webp" alt="">
+    </div>
+
+</section>
+
+
+ <!---slide show-->
+<section class="Mission">
+  <div class="carousel-container">
+    <h2 class="headingh2" data-aos="zoom-in">Our Mission</h2>
+      <div class="box">
+          <img src="images/skill.jpg" alt="">
+          <h3>Skills Validation</h3>
+          <span>Verification</span>
+          <p> Validate and recognize your skills with certification programs. Our mission is to offer certificates of completion that showcase your expertise to potential employers, helping you stand out in the competitive job market.</p>
+          <p>Ace Study</p>
+      </div>
+      
+      <div class="box">
+          <img src="images/Data.jpg" alt="">
+          <h3>Data Science Mastery</h3>
+          <span>Master</span>
+          <p>
+            Empower learners to master the field of data science through comprehensive courses covering Python, machine learning, data analysis, and more. Our mission is to provide top-tier education and training to help individuals excel in data science and analytics. </p>
+              <p>Ace Study</p>
+      </div>
+  
+  
+      <div class="box">
+          <img src="images/profissional.jpg" alt="">
+          <h3>Professional Development</h3>
+          <span>professionalism</span>
+          <p> Support aspiring software engineers in their journey towards becoming experts. Our mission is to offer specialized software engineering specializations, fostering expertise in web development, mobile app development, and software testing, and to prepare them for success in the tech industry.</p>
+          <p>Ace Study.</p>
+      </div>
+  
+      <div class="box">
+          <img src="images/career advacment.jpg" alt="">
+          <h3>Career Advancement</h3>
+          <span></span>
+          <p>Enable students to thrive in their careers by offering a range of career services, including job placement assistance, resume building, and interview preparation. Our mission is to help our learners achieve their professional aspirations.</p>
+          <p>Ace Study.</p>
+      </div>
+      
+      <div class="box">
+          <img src="images/guid.jpg" alt="">
+          <h3>Guidance and Mentorship</h3>
+          <span></span>
+          <p>Foster industry connections and provide guidance to students through mentorship programs. Our mission is to connect aspiring professionals with experienced industry mentors for support and insights.</p>
+          <p>Ace Study</p>
+      </div>
+      <button class="prev"></button>
+      <button class="next"></button>
+  </div>
+  </section>
+  
+
+
+  <section class="animated-card">
+    <div class="card">
+        <img src="images/price.jpg" alt="Card Image">
+        <div class="content">
+            <h2>Price</h2>
+            <p>Fiar prices for diffirent catagories.</p>
+            <a href="price.html" class="btn">Price</a>
+        </div>
+    </div>
+    <div class="card">
+      <img src="images/teacher.jpg" alt="Card Image">
+      <div class="content">
+          <h2>Experienced teachers </h2>
+          <p>Meet our experienced teachers.</p>
+          <a href="teacher.html" class="btn">Meet</a>
+      </div>
+  </div>
+  <div class="card">
+    <img src="images/comment.jpg" alt="Card Image">
+    <div class="content">
+        <h2>Reviews</h2>
+        <p>See, our student feedback</p>
+        <a href="review.html" class="btn">See More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="faqs" id="faqs">
+  <h2 class="headingh2" data-aos="zoom-in">Frequently Asked Questions</h2>
+  <div class="container-faqs__container">
+    <article class="faq">
+      <div class="faq__header">
+        <h4>How do I know the right courses for me?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          answer 1.
+        </p>
+      </div>
+    </article>
+
+    <article class="faq">
+      <div class="faq__header">
+        <h4>How to kick start your career in Data science?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          answer 2 </p>
+      </div>
+    </article>
+    <article class="faq">
+      <div class="faq__header">
+        <h4>What is Machine learning?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          answer 3 </p>
+      </div>
+    </article>
+
+    <article class="faq">
+      <div class="faq__header">
+        <h4>What programming languages are used in data science?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          Answer 4</p>
+      </div>
+    </article>
+    <article class="faq">
+      <div class="faq__header">
+        <h4>What are the prerequisites for a data science course?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          Answer 5
+          </p>
+      </div>
+    </article>
+
+    <article class="faq">
+      <div class="faq__header">
+        <h4>What is the meaning of Deep Learning?</h4>
+        <i class="uil uil-plus"></i>
+      </div>
+      <div class="question__answer">
+        <p>
+          Answer 6
+        </p>
+      </div>
+    </article>
+
+    
+    
+
+    <!-- Add more FAQ items as needed -->
+  </div>
+</section>
+<!--====================== END OF FAQs =====================-->
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Ace Study stands out due to its commitment to inclusivity and accessibility. </p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">course</a>
+            <a href="#">teacher</a>
+            <a href="#">price</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+           <p> <i class="fas fa-phone"></i> +7 000 000 0000 </p>
+           <p> <i class="fas fa-envelope"></i> info@AceStudy.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Kabanbai Batyr Avenue 60a /13 </p>
+        </div>
+
+    </div>
+
+    <div class="credit"><span> @2023 Ace Study </span> | all rights reserved </div>
+
+</section>
+
+</div>
+
+
+
+<script>
+  const audio = document.getElementById("myAudio");
+  const muteButton = document.getElementById("muteButton");
+
+  audio.muted = false; // Start with audio not muted
+
+  function toggleMute() {
+      audio.muted = !audio.muted;
+      muteButton.innerHTML = audio.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+  }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
